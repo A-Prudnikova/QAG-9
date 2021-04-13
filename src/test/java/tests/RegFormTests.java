@@ -42,8 +42,8 @@ public class RegFormTests extends TestBase {
             $(".react-datepicker__day--003").click();
             $("#subjectsInput").setValue(subject).pressEnter();
             $(byText("Sports")).click();
-            $(byText("Reading")).click();
-            $(byText("Music")).click();
+            //$(byText("Reading")).click();
+            //$(byText("Music")).click();
             $("#uploadPicture").uploadFromClasspath("ava.jpg");
             $("#currentAddress").setValue(address);
             $("#react-select-3-input").setValue(state).pressEnter();
@@ -59,7 +59,7 @@ public class RegFormTests extends TestBase {
                     text(phone),
                     text("03 January,1910"),
                     text(subject),
-                    text("Sports, Reading, Music"),
+                    text("Sports"),
                     text("ava.jpg"),
                     text(address),
                     text(state),
